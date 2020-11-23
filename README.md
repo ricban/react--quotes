@@ -1,3 +1,27 @@
-My implemetation to <a href="https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine" target="_blank" rel="noopener noreferrer nofollow">freeCodeCamp's "Front End Libraries Projects - Build a Random Quote Machine"</a> challenge built with React. 
+# Random Quote Machine
 
-<a href="https://codepen.io/kingtoto/pen/jOPPwxB" target="_blank" rel="noopener noreferrer nofollow">View CodePen</a>
+My implemetation to [*freeCodeCamp.org's "Front End Libraries Projects - Build a Random Quote Machine"*](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine) challenge built with React. 
+
+[*View CodePen*](https://codepen.io/kingtoto/pen/jOPPwxB)
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+**Available Scripts**
+
+In the project directory, you can run:
+
+### `yarn start`
+
+Runs the app in the development mode.<br />
+Open *`http://localhost:3000`* to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+### `yarn build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
