@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
+:root {
+  /* 36px */
+  --font-size-quote: 2.250em;
+  /* 30px */
+  --font-size-author: 1.875em; 
+  /* 20px */
+  --font-size-button: 1.250em;
+  --text-align: justify;
+  --width-button: 150px;
+  --padding-button: 20px 10px;
+  --margin-left-button: 30px;
+  --padding-container: 75px 75px 60px;
+  --width-container: 50%;
+  --margin-bottom-footer: 50px;
+}
+@media (max-width: 576px) {
+  :root {
+      /* 18px */
+      --font-size-quote: 1.125em;
+      /* 16px */
+      --font-size-author: 1.000em;
+      /* 12px */
+      --font-size-button: 0.750em;
+      --text-align: left;
+      --width-button: 75px;
+      --padding-button: 10px;
+      --margin-left-button: 15px;
+      --width-container: 70%;
+      --padding-container: 40px 30px 30px;
+      --margin-bottom-footer: 30px;
+  }
+}
+html, body, #root {
+  font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;            
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 16px;
+}
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #673AB7;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  box-shadow: 5px 10px 20px #888888;
+  width: var(--width-container);
+  margin: auto;
+  padding: var(--padding-container);
+  /* animation: fadeInOut 2s; */
+}
+blockquote {
+  margin: 0;
+  animation: fadein 2s;
+}
+#text {
+  font-size: var(--font-size-quote);
+  margin-top: 0;
+  text-align: var(--text-align);
+}
+#text::before {
+  content: open-quote;
+}
+#text::after {
+  content: close-quote;
+}
+#author {
+  color: rgb(209, 196, 233);
+  font-size: var(--font-size-author);
+  font-weight: 300;
+  margin-bottom: var(--margin-bottom-footer);
+}
+#author::before {
+  content: "\2014\00A0"
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.btn {
+  width: var(--width-button);
+  font-size: var(--font-size-button);
+  font-weight: 400;
+  text-align: center;
+  background-color: #e040fb;
+  color: inherit;
+  cursor: pointer;
+  padding: var(--padding-button);
+  border-radius: .25rem;
+  text-decoration: none;
+  margin-left: var(--margin-left-button);
+  border: 1px solid transparent;
+  user-select: none;
+  transition: background-color .15s ease-in-out;
+}
+.btn:hover {
+  background-color: #9c27b0;
+}
+.animation {
+  animation: fadeInOut 4s;
+}
+@keyframes fadeInOut {
+  0% { opacity: 1; }
+  25% { opacity: .5; }
+  50% { opacity: 0; }
+  75% { opacity: .5; }
+  100% { opacity: 1; }
+}
